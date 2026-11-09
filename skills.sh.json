@@ -1,0 +1,10 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    { "title": "Start here", "description": "Write the company's Job Split; every other skill reads it.", "skills": ["job-split"] },
+    { "title": "Read the page", "description": "What a first-time visitor, or an AI assistant, gets from your homepage.", "skills": ["marketing-check", "aeo-visibility-audit"] },
+    { "title": "Read the market", "description": "One competitor, one dated page.", "skills": ["competitor-snapshot"] },
+    { "title": "Measure the week", "description": "The review that makes a channel earn its place.", "skills": ["weekly-marketing-review"] }
+  ]
+}

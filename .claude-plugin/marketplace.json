@@ -1,0 +1,43 @@
+{
+  "$schema": "https://claude.com/schemas/marketplace.json",
+  "name": "marketingos",
+  "displayName": "Marketing OS",
+  "description": "The marketing layer of Portfolio OS, packaged for other companies: the skills Jukka Blomberg's agents run nightly on 14 ventures — job split, marketing check, AEO audit, competitor snapshot, weekly review. Every skill says where it runs. Free, MIT.",
+  "homepage": "https://jukkablomberg.com/marketing",
+  "author": {
+    "name": "Jukka Blomberg",
+    "url": "https://jukkablomberg.com"
+  },
+  "plugins": [
+    {
+      "name": "job-split",
+      "displayName": "Job Split (start here)",
+      "description": "Run once per company, first: writes .agents/job-split.md — which marketing jobs go to agents, which stay with a person, which are not covered — the file every other skill reads before it runs.",
+      "source": "./skills/job-split"
+    },
+    {
+      "name": "marketing-check",
+      "displayName": "Marketing Check",
+      "description": "Eight reads of one page — identity, audience, proof, next step, questions, category, trust, listings — a score out of 100 and one suggestion per read. The rule set behind northpoint.fi/check/marketing.",
+      "source": "./skills/marketing-check"
+    },
+    {
+      "name": "aeo-visibility-audit",
+      "displayName": "AEO / GEO Visibility Audit",
+      "description": "Twelve rules for being cited by AI answer engines (ChatGPT, Perplexity, Claude, Gemini). Runs nightly on 15 properties through the Head of SEO agent.",
+      "source": "./skills/aeo-visibility-audit"
+    },
+    {
+      "name": "competitor-snapshot",
+      "displayName": "Competitor Snapshot",
+      "description": "One competitor, one dated page: markets, offers, campaigns, claims, channels, hiring, listings — every row sourced — and three growth opportunities for your company.",
+      "source": "./skills/competitor-snapshot"
+    },
+    {
+      "name": "weekly-marketing-review",
+      "displayName": "Weekly Marketing Review",
+      "description": "The measured week in six sections, numbers only from named sources, three flat weeks trigger redesign-or-kill. The format Portfolio OS writes about itself every Sunday.",
+      "source": "./skills/weekly-marketing-review"
+    }
+  ]
+}
